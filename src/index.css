@@ -220,12 +220,12 @@ span {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333;
-    border-top: 1px solid #555;
+    background-color:#050b28e8;
   }
   
   .items.open {
     display: flex;
+    z-index: 1000;
   }
 
   .item {
