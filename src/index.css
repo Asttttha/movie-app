@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Karla:ital,wght@0,200..800;1,200..800&family=McLaren&family=Sawarabi+Gothic&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +7,7 @@
 
 body {
   background-color: #080b18;
-  font-family: cursive;
+  font-family: "McLaren", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: rgb(225, 220, 245);
@@ -196,7 +197,7 @@ span {
 
 .no{
   color: #6643b5;
-  font-family: cursive;
+  font-family: "McLaren", sans-serif;
 }
 
 
