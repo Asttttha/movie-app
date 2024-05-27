@@ -9,7 +9,7 @@ import toast, { Toaster } from 'react-hot-toast';
 const Favs = () => {
     const dispatch = useDispatch()
     const { data: movies, favorites, isLoading, isError } = useSelector(state => state.movie);
-    const favoriteMovies = movies.filter(m => favorites.includes(m.id));
+    const favoriteMovies = favorites.map(favoriteId => movies.find(m => m.id === favoriteId));
 
     const notify = () => toast.success('Movie removed from favorites', {
         style: {
