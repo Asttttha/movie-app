@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Movies list
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple and responsive movie list web app that features two main components. The home page displays a list of movies fetched from API, and each card contains all necessary attributes of the movie. Clicking on a card redirects you to the IMDb page of that movie. This web app is designed for seamless navigation and provides a great user experience across all devices. API credentials are stored in an `.env` file for security.
 
-## Available Scripts
+#### _Deployed link [here](https://movie-app-astttthas-projects.vercel.app/)_
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React.js**: For building the user interface
+- **Redux**: For state management
+- **Axios**: For API integration
+- **Custom CSS**: For styling the app
+- **React-hot-toast**: For user notifications
+- **React-icons**: For icons
+- **React-router-dom**: For routing
+- **Google Fonts**: For fonts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Responsive Design**: Ensures the app works well on all devices.
+- **API Integration**: Dynamically fetches and displays movie data.
+- **Favorites Management**: Users can add or remove movies from their favorites list.
+- **Notifications**: Uses react-hot-toast to notify users about their actions.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+To get a local copy up and running follow these simple steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js installed
+- npm (Node package manager) installed (or yarn)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repo**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+git clone https://github.com/Asttttha/movie-app.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Navigate to the project directory**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+cd movie-app
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Install dependencies**
 
-## Learn More
+```sh
+npm install axios react-redux redux @reduxjs/toolkit @redux-devtools/extension react-icons redux-thunk react-router-dom react-hot-toast
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Start the development server**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm start
+```
 
-### Code Splitting
+## Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Create a `.env` file in the root of your project to store API credentials:
 
-### Analyzing the Bundle Size
+```plaintext
+REACT_APP_API_URL= example@url.com
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
