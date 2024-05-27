@@ -185,11 +185,26 @@ span {
 
 /* favs */
 
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .fav{
   /* margin: 20px; */
+  animation: fadeUp 1s ease-in-out;
   justify-content: center;
   align-items: center;
 }
+
 .favHead{
   margin: 20px;
   text-align: center;
